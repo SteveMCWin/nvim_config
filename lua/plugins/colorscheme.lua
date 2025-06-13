@@ -133,8 +133,6 @@ return {
                 },
             })
 
-            -- vim.cmd("colorscheme kanagawa")
-
         end
     },
     -- NOTE: neosolarized 
