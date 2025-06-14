@@ -1,4 +1,20 @@
 return {
+    -- NOTE: Catppuccin
+    {
+        "catppuccin/nvim",
+        name = "catppuccin",
+        config = function()
+            require("catppuccin").setup({})
+        end,
+    },
+    -- NOTE: Palenight
+    {
+        "alexmozaidze/palenight.nvim",
+        name = "palenight",
+        config = function()
+            require("palenight").setup({})
+        end,
+    },
     -- NOTE: Rose pine
     {
         "rose-pine/neovim",
