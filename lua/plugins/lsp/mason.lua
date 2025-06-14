@@ -1,4 +1,20 @@
 return {
+    --[[
+    {
+        "williamboman/mason.nvim",
+        config = function ()
+            require("mason").setup()
+        end
+    },
+    {
+        "mason-org/mason-lspconfig.nvim",
+        opts = {},
+        dependencies = {
+            { "mason-org/mason.nvim", opts = {} },
+            "neovim/nvim-lspconfig",
+        },
+    },
+    --]]
     "williamboman/mason.nvim",
     lazy = false,
     dependencies = {
@@ -45,10 +61,8 @@ return {
         mason_tool_installer.setup({
             ensure_installed = {
                 "prettier", -- prettier formatter
-                -- "stylua",   -- lua formatter
-                -- "isort",    -- python formatter
-                -- "pylint",
                 "clangd",
+                "cpptools",
                 -- { 'eslint_d', version = '13.1.2' },
             },
 

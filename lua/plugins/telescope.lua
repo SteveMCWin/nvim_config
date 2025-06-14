@@ -6,6 +6,7 @@ return {
         { "nvim-telescope/telescope-fzf-native.nvim", build = "make" },
         "nvim-tree/nvim-web-devicons",
         "andrew-george/telescope-themes",
+        "nvim-telescope/telescope-ui-select.nvim",
     },
 
     config = function()
@@ -15,6 +16,7 @@ return {
 
         telescope.load_extension("fzf")
         telescope.load_extension("themes")
+        telescope.load_extension("ui-select")
 
         telescope.setup({
             defaults = {

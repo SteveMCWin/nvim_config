@@ -110,6 +110,9 @@ return {
             },
         })
 
+        lspconfig.gopls.setup({})
+        lspconfig.clangd.setup({})
+
         --[[
 
 
