@@ -7,6 +7,7 @@ return {
             require("catppuccin").setup({})
         end,
     },
+
     -- NOTE: Palenight
     {
         "alexmozaidze/palenight.nvim",
@@ -15,6 +16,7 @@ return {
             require("palenight").setup({})
         end,
     },
+
     -- NOTE: Rose pine
     {
         "rose-pine/neovim",

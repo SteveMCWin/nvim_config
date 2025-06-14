@@ -4,8 +4,9 @@ return {
     dependencies = 'nvim-tree/nvim-web-devicons',
     config = function()
         require('bufferline').setup({
-            separator_style = 'padded_slope',
-
+            options = {
+                separator_style = 'slope',
+            },
         })
     end,
 }
