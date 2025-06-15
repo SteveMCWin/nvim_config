@@ -54,6 +54,11 @@ return {
                 "lua_ls",
                 "gopls",
                 "clangd",
+                "cpplint",
+                "json-lsp",
+                "hyprls",
+                "cmake-language-server",
+                "cmakelint",
             },
             automatic_instalation = true,
         })
