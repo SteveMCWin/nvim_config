@@ -1,4 +1,23 @@
 return {
+    -- NOTE: Nightfox
+    {
+        "EdenEast/nightfox.nvim",
+        name = "nightfox",
+        config = function ()
+            require("nightfox").setup({
+                options = {
+                    transparent = true,
+                    terminal_colors = true,
+                    styles = {
+                        comments = "italic",
+                        constants = "bold",
+                    }
+                },
+            })
+            vim.cmd("colorscheme nightfox")
+        end
+    },
+
     -- NOTE: Catppuccin
     {
         "catppuccin/nvim",
@@ -150,10 +169,9 @@ return {
                     dark = "wave", -- try "dragon" !
                 },
             })
-
         end
     },
-    -- NOTE: neosolarized 
+    -- NOTE: neosolarized
     {
         "craftzdog/solarized-osaka.nvim",
         lazy = false,

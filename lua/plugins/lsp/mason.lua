@@ -58,7 +58,6 @@ return {
                 "json-lsp",
                 "hyprls",
                 "cmake-language-server",
-                "cmakelint",
             },
             automatic_instalation = true,
         })
@@ -68,6 +67,7 @@ return {
                 "prettier", -- prettier formatter
                 "clangd",
                 "cpptools",
+                "cmakelint",
                 -- { 'eslint_d', version = '13.1.2' },
             },
 
