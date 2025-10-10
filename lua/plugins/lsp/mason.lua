@@ -48,18 +48,26 @@ return {
         })
 
         mason_lspconfig.setup({
-            automatic_enable = false,
+            automatic_enable = true,
             -- servers for mason to install
             ensure_installed = {
+                "sqlls",
+                "vtsls",
+                "ts_ls",
+                "vue_ls",
+                "dockerls",
+				"html",
+				"cssls",
                 "lua_ls",
                 "gopls",
                 "clangd",
-                "cpplint",
-                "json-lsp",
                 "hyprls",
-                "cmake-language-server",
+                "jsonls",
+                "yamlls",
+                "gh_actions_ls",
+                "bashls",
             },
-            automatic_instalation = true,
+            automatic_installation = true,
         })
 
         mason_tool_installer.setup({
@@ -68,7 +76,10 @@ return {
                 "clangd",
                 "cpptools",
                 "cmakelint",
-                -- { 'eslint_d', version = '13.1.2' },
+                "dotenv-linter",
+                "eslint_d",
+                "actionlint",
+                "beautysh",
             },
 
         })

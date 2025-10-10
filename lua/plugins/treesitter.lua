@@ -26,7 +26,7 @@ return {
                 "glsl",
                 "gdscript",
                 "gdshader",
-                -- "gdresource",
+                "godot_resource",
                 "lua",
                 "markdown",
                 "bash",

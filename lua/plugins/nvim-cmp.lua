@@ -252,14 +252,13 @@ return {
                 -- end, { 'i', 's' }),
 
                 ["<C-BS>"] = cmp.mapping.abort(), -- close completion window
-                ['<S-d>'] = cmp.mapping(function()
-                    cmp.close_docs()
-                end, { 'i', 's' }),
+                -- ['<C-d>'] = cmp.mapping(function()
+                --     cmp.close_docs()
+                -- end, { 'i', 's' }),
 
-                ['<C-d>'] = cmp.mapping.scroll_docs(4),
-                ['<C-u>'] = cmp.mapping.scroll_docs(-4),
-                -- ['<C-tab>'] = cmp.mapping(select_next_item),
-                -- ['<C-S-tab>'] = cmp.mapping(select_prev_item),
+                ['<C-->'] = cmp.mapping.scroll_docs(4),
+                ['<C-=>'] = cmp.mapping.scroll_docs(-4),
+
                 ['<C-n>'] = cmp.mapping(select_next_item),
                 ['<C-p>'] = cmp.mapping(select_prev_item),
                 -- ['<Down>'] = cmp.mapping(select_next_item),

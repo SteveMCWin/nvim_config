@@ -32,7 +32,12 @@ return {
         "alexmozaidze/palenight.nvim",
         name = "palenight",
         config = function()
-            require("palenight").setup({})
+            require("palenight").setup({
+                options = {
+                    transparent = true,
+                    terminal_colors = true,
+                }
+            })
         end,
     },
 

@@ -110,10 +110,12 @@ return {
             },
         })
 
-        lspconfig.gopls.setup({})
-        lspconfig.clangd.setup({})
-        lspconfig.jsonls.setup({})
-        lspconfig.hyprls.setup({})
-        lspconfig.cmake.setup({})
+        -- lspconfig.gopls.setup(capabilities)
+        lspconfig.clangd.setup(capabilities)
+        lspconfig.jsonls.setup(capabilities)
+        lspconfig.hyprls.setup(capabilities)
+        lspconfig.cmake.setup(capabilities)
+        lspconfig.gdscript.setup(capabilities)
+        lspconfig.dockerls.setup(capabilities)
     end,
 }
