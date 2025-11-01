@@ -84,13 +84,13 @@ return {
         -- as mason setup_handlers is deprecated & its causing issues with lsp settings
         --
         -- Setup servers
-        local lspconfig = require("lspconfig")
+        -- local lspconfig = require("lspconfig")
         local cmp_nvim_lsp = require("cmp_nvim_lsp")
         local capabilities = cmp_nvim_lsp.default_capabilities()
 
         -- Config lsp servers here
         -- lua_ls
-        lspconfig.lua_ls.setup({
+        vim.lsp.config['lua_ls'] = {
             capabilities = capabilities,
             settings = {
                 Lua = {
@@ -108,14 +108,76 @@ return {
                     },
                 },
             },
-        })
+        }
 
-        -- lspconfig.gopls.setup(capabilities)
-        lspconfig.clangd.setup(capabilities)
-        lspconfig.jsonls.setup(capabilities)
-        lspconfig.hyprls.setup(capabilities)
-        lspconfig.cmake.setup(capabilities)
-        lspconfig.gdscript.setup(capabilities)
-        lspconfig.dockerls.setup(capabilities)
+        vim.lsp.config['gopls'] = {
+            capabilities = capabilities,
+        }
+
+        vim.lsp.config['clangd'] = {
+            capabilities = capabilities,
+        }
+
+        vim.lsp.config['jsonls'] = {
+            capabilities = capabilities,
+        }
+
+        vim.lsp.config['hyprls'] = {
+            capabilities = capabilities,
+        }
+
+        vim.lsp.config['cmake'] = {
+            capabilities = capabilities,
+        }
+
+        vim.lsp.config['gdscript'] = {
+            capabilities = capabilities,
+        }
+
+        vim.lsp.config['dockerls'] = {
+            capabilities = capabilities,
+        }
+
+        vim.lsp.config['sqlls'] = {
+            capabilities = capabilities,
+        }
+
+        vim.lsp.config['vtsls'] = {
+            capabilities = capabilities,
+        }
+
+        vim.lsp.config['ts_ls'] = {
+            capabilities = capabilities,
+        }
+
+        vim.lsp.config['vue_ls'] = {
+            capabilities = capabilities,
+        }
+
+        vim.lsp.config['html'] = {
+            capabilities = capabilities,
+        }
+
+        vim.lsp.config['cssls'] = {
+            capabilities = capabilities,
+        }
+
+        vim.lsp.config['yamlls'] = {
+            capabilities = capabilities,
+        }
+
+        vim.lsp.config['cssls'] = {
+            capabilities = capabilities,
+        }
+
+        vim.lsp.config['gh_actions_ls'] = {
+            capabilities = capabilities,
+        }
+
+        vim.lsp.config['terraformls'] = {
+            capabilities = capabilities,
+        }
+
+
     end,
 }

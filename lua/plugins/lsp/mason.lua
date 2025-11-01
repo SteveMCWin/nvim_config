@@ -63,9 +63,10 @@ return {
                 "clangd",
                 "hyprls",
                 "jsonls",
-                "yamlls",
+                -- "yamlls",
                 "gh_actions_ls",
                 "bashls",
+                "terraformls",
             },
             automatic_installation = true,
         })
